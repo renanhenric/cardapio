@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Renan H Silva">
+    <meta name="description" content="um site para uso de restaurantes e lanchontes que possuem serviços de delivery">
+    <meta name="keywords" content="html5, delivery, online, comida, lanchontes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ac4c6e2b8b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link rel="shortcut icon" href="img/icon.ico" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/itens.css">
+    <link rel="stylesheet" href="styles/pedido.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <title>Cardápio</title>
+</head>
+
+
+<body>
+    <!-- Barra lateral FIXA-->
+    <header class="sidenav">
+        <header class="sidenav">
+            <div>
+                <img src="img/sobre/icon.svg">
+                <h1> <a href="">Test 123</a></h1>
+                <h2> <a href=""></a></h2>
+                <p></p><p></p>
+                <ul>
+                    <li>
+                        <div class="icone"><i class="fas fa-home"></i></div>
+                        <a id="i-sobre" href="#sobre">Página inicial</a>
+                    </li>
+                    <li>
+                        <div class="icone"><i class="fas fa-hamburger"></i></div>
+                        <a id="i-lan" class="active">Cardapio</a>
+                    </li>
+                    <li>
+                        <div class="icone"><i class="fas fa-mobile"></i></div>
+                        <a id="i-pedidos">Pedido</a>
+                    </li>
+
+                </ul>
+                </nav>
+        </header>
+    </header>
+
+    <!-- MAIN -> Sobre,Lanches, Bebidas e Pedido -->
+    <div class="main">
+        <!-- HomePage// home.css -->
+        <section class="sobre active" id="sobre">
+            <div class="container">
+
+                <div id="sobre-titulos">
+                    <h1>Venaha experimentar nosso cardápio</h1>
+                    <h1>Estabelecimento <span>Rancho</span></h1>
+                </div>
+                <div id="sobre-info-container">
+                    <div id="sobre-txt">
+                        <p></p><p></p><p></p><p></p>
+                        <p class="txt-italico" >Lugar de gente feliz com comida boa e ambiente agradável. Sempre buscando a plena satisfação dos nossos clientes!</p>
+                        <p></p><p></p><p></p><p></p>
+                    </div>
+
+                    <ul>
+                        <div id="slide">
+                            <div id="voltar">
+                                <i class="fas fa-angle-double-left"></i>
+                            </div>
+                            <figure>
+
+                                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                                    alt="Restaurante">
+
+                                <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                    alt="Comida">
+
+                            </figure>
+
+                            <div id="avancar">
+                                <i class="fas fa-angle-double-right"></i>
+                            </div>
+                    </ul>
+                </div>
+                <div>
+        </section>
+
+        <!-- Opções de lanche // itens.css -->
+        <section class="lanches hidden" id="lanches">
+            <div>
+                <div>
+                    <h1>Lanches</h1>
+                    <article class="itens-container">
+                        <!-- Pizza -->
+                        <div class="item-info item-info-1">
+
+                            <div class="item-img">
+                                <img src="img/lanches/pizza.jpg" alt="Pizza">
+                            </div>
+
+                            <div class="item-txt">
+                                <strong>Pizza</strong>
+                                <span class="item-sub-txt"> Molho, mussarela, calabresa, cebola fatiada e orégano</span>
+                            </div>
+
+                            <div class="item-numeros-container">
+                                <div class="item_valor">
+                                    <div>R$ 7,00</div>
+                                </div>
+
+                                <div class="item_quant">
+
+                                    <div>
+                                        <input type="checkbox" value=7,00 name="item-checkbox" class="item-checkbox"
+                                            id="Pizza">
+                                    </div>
+
+                                </div>
+
+                                <div class="item_add">
+                                    <i class="fas fa-plus btnAdd1"></i>
+                                </div>
+
+                            </div>
+
+                            <div id="adicionais1" class="adicionais hidden">
+                                <div class="itens-adicionais">
+                                    <strong>Adicionais</strong>
+                                    <ul class="radios-add">
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Pizza"
+                                                id="Bacon"> Bacon</li>
+                                        <li>R$3,00</li>
+
+                                        <li><input type="radio" class="input-add" value=4,00 name="" alt="Pizza"
+                                                id="Queijo"> Queijo</li>
+                                        <li>R$4,00</li>
+
+                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Pizza"
+                                                id="tomate"> Tomate</li>
+                                        <li>R$1,00</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hamburguer1 -->
+
+                        <div class="item-info item-info-3">
+                            <div class="item-img">
+                                <img src="img/lanches/hamburger1.jpg" alt="Hamburger">
+                            </div>
+                            <div class="item-txt">
+                                <strong>Hamburger</strong>
+                                <span class="item-sub-txt"> Molho, mussarela, calabresa, cebola fatiada e orégano</span>
+                            </div>
+
+                            <div class="item-numeros-container">
+                                <div class="item_valor">
+                                    <div>R$ 5,00</div>
+                                </div>
+
+                                <div class="item_quant">
+                                    <div>
+                                        <input type="checkbox" value=5,00 name="item-checkbox" class="item-checkbox"
+                                            id="Hamburger">
+                                    </div>
+                                </div>
+
+                                <div class="item_add">
+                                    <i class="fas fa-plus btnAdd3"></i>
+                                </div>
+
+                            </div>
+                            <div id="adicionais-3" class="adicionais hidden ">
+                                <div class="itens-adicionais">
+                                    <strong>Adicionais</strong>
+                                    <ul class="radios-add">
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Hamburguer1"
+                                                id="Bacon"> Bacon</li>
+                                        <li>R$3,00</li>
+
+                                        <li><input type="radio" class="input-add" value=2,00 name="" alt="Hamburguer1"
+                                                id="Queijo"> Queijo</li>
+                                        <li>R$2,00</li>
+
+                                        <li><input type="radio" class="input-add" value=7,00 name="" alt="Hamburguer1"
+                                                id="Batata Frita"> Batata Frita</li>
+                                        <li>R$7,00</li>
+
+                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Hamburguer1"
+                                                id="Cebola">Cebola</li>
+                                        <li>R$1,00</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        </div>
+                    </article>
+                    <div>
+                        <article class="container">
+                            <div>
+                                <h1>Bebidas</h1>
+                                <div>
+                                    <article class="itens-container">
+                                        <div class="item-info info-bebidas">
+                                            <div class="item-img">
+                                                <img src="img/bebidas/agua.jpg" alt="agua">
+                                            </div>
+                                            <div class="item-txt txt-bebidas">
+                                                <strong>
+                                                    Água
+                                                </strong>
+                                            </div>
+        
+                                            <div class="item-numeros-container">
+                                                <div class="item_valor">
+                                                    <div>R$ 2,00</div>
+                                                </div>
+        
+                                                <div class="item_quant">
+                                                    <div>
+                                                        <input type="checkbox" value=2,00 name="item-checkbox" id="Água">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="item-info info-bebidas">
+                                            <div class="item-img">
+                                                <img src="img/bebidas/limonada.jpg" alt="Limonada">
+                                            </div>
+                                            <div class="item-txt">
+                                                <strong>Limonada</strong>
+                                            </div>
+        
+                                            <div class="item-numeros-container">
+                                                <div class="item_valor">
+                                                    <div>R$ 5,0</div>
+                                                </div>
+        
+                                                <div class="item_quant">
+                                                    <div>
+                                                        <input type="checkbox" value=5,00 name="item-checkbox" id="Limonada">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="item-info info-bebidas">
+                                            <div class="item-img">
+                                                <img src="img/bebidas/coca.jpg" alt="Coca-cola">
+                                            </div>
+                                            <div class="item-txt">
+                                                <strong>Coca-cola</strong>
+                                            </div>
+        
+                                            <div class="item-numeros-container">
+                                                <div class="item_valor">
+                                                    <div>R$ 4,0</div>
+                                                </div>
+        
+                                                <div class="item_quant">
+                                                    <div>
+                                                        <input type="checkbox" value=4,00 name="item-checkbox" id="Coca-cola">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-info info-bebidas">
+                                            <div class="item-img">
+                                                <img src="img/bebidas/pepsi.jpg" alt="pepsi">
+                                            </div>
+                                            <div class="item-txt">
+                                                Pepsi em lata
+                                            </div>
+        
+                                            <div class="item-numeros-container">
+                                                <div class="item_valor">
+                                                    <div>R$ 5,00</div>
+                                                </div>
+        
+                                                <div class="item_quant">
+                                                    <div>
+                                                        <input type="checkbox" value=5,00 name="item-checkbox" id="pepsi">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </article>
+                        </article>
+
+        </section>
+
+    </div>
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wpp.js"></script>
+    <script src="js/pages.js"></script>
+
+</body>
+
+</html>

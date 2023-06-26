@@ -46,7 +46,7 @@ header img {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-image: linear-gradient(to bottom,var(--salmao), #6d6d6db0 180%);
+    background-image: linear-gradient(to bottom,var(--salmao), #5e0707b0 180%);
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: hidden; /* Disable vertical scroll */
     padding-top: 5px;
